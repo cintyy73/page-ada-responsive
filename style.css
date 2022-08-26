@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* principal */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: rgb(192, 221, 231);
+    padding: 10px;
+}
+
+header p.logo{
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 25px;
+    list-style: none;
+}
+
+header nav ul li a{
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+header nav ul li a:hover{
+    color: blueviolet;
+}
+
+header h1{
+    font-size: 30px;
+    color: white;
+}
+
+section.pantalla-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    background-image:url(./imagenes/pantalla-bienvenida.jpg) ;   
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+div.aplica{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    width: 150px;
+    margin: 20px;
+    padding: 10px;
+}
+
+div.aplica a{
+    color: white;
+    text-decoration: none;
+}
+
+section.pantalla-principal div.aplica a{ 
+    color: white;
+    text-decoration: none;
+}
+
+/* segunda pantalla */
+
+section#quienes-somos{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+section#quienes-somos div.ada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+}
+
+section#quienes-somos div.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+section#quienes-somos div.img img{
+    height: 60vh;
+}
+
+section#quienes-somos div.ada p.segunda-pantalla{
+    margin: 25px;
+    text-align: center;
+}
+
+section#quienes-somos div.ada h2 span.rosa{
+    color: rgb(176, 155, 197);
+}
+
+/* tercera pantalla */
+
+section#nuestros-programas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+section#nuestros-programas h2{
+    margin: 15px;
+}
+
+section#nuestros-programas div.programas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 60%;
+    border-radius: 8px;
+    margin: 25px;
+}
+
+section#nuestros-programas div.programas.front{
+    background-image: url(./imagenes/front-end.jpg);
+}
+
+section#nuestros-programas div.programas.full{
+    background-image: url(./imagenes/full-stack.jpg);
+}
+
+section#nuestros-programas div.programas.python{
+    background-image: url(./imagenes/python.jpg);
+}
+
+section#nuestros-programas div.programas div.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    width: 25%;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* cuarta pantalla */
+
+section#caracteristicas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    height: 100vh;
+}
+
+div.container-caracteristicas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+div.container-caracteristicas span.tilde{
+    color: green;
+}
+
+p.dato{
+    margin-top: 20px;
+}
+
+/* quinta pantalla */
+
+section.lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color: rgb(155, 91, 215);
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 20vh;
+    font-size: 10px;
+    color: rgb(64, 64, 64);
+    padding: 10px;
+}
+
+/* mediaqweris */
+
+@media (max-width:830px){
+    div.img, div.img img{
+        display: none;
+}
+}
